@@ -1,14 +1,21 @@
 # Workflow
 
 # Should have name
-
+# on tell when the workflow should runs
 name: Hellow
 on:
   workflow_dispatch
-
+# job tells what the workflow should do [gives indentation by tab] their can be one or more than 1 jobs, hence we write the jobs
+# jobs is an object so need indentation.
 jobs:
   say-hellow:
     runs-on: ubuntu-latest
     steps:
       - name: say hellow to everyone
         run: echo "Helloe dosto"
+
+# step
+# should be inside the job.
+
+# Action
+# should be inside the steps
