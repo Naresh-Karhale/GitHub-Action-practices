@@ -1,0 +1,14 @@
+# Workflow
+
+# Should have name
+
+name: Hellow
+on:
+  workflow_dispatch
+
+jobs:
+  say-hellow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: say hellow to everyone
+        run: echo "Helloe dosto"
