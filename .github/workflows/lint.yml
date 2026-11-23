@@ -17,5 +17,5 @@ jobs:
       - name: check the files for linting
         run: ruff check .
       - name: Automatically fix error in linting
-        run: ruff check --fix
+        run: ruff check --fix .
       
