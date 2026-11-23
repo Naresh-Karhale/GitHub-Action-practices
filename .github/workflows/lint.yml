@@ -1,0 +1,15 @@
+name: Auto linting
+on: 
+  push:
+    paths: "*.py"
+jobs:
+  code-linting:
+    runs-on: ubuntu-latest
+    steps:
+      - name: cheackout/clone the code
+        uses: action/checkout@v7
+      - name: install linter
+        run: pip install ruff
+      - name: check the files for linting
+        run: ruff check .
+      
