@@ -1,3 +1,7 @@
+# What is the goal of your workflow
+# Goal: Whenever someone changes the python code,
+# the linter will check if the sytax, format, indentation (linting) is correct or not
+
 name: Auto linting
 on: 
   push:
