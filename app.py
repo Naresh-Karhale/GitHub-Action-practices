@@ -1,4 +1,3 @@
-# This code form dev and uvt env code 
 from flask import Flask, render_template
 app = Flask(__name__)
 
